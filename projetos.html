@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Arj CodeX</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header" id="topo">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-arj.png" alt="ARJ CodeX">
+            </a>
+        </div>
+
+        <div class="menu-mobile-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <nav class="menu" id="menu">
+            <a href="index.html#contato" class="btn-menu destaque">Contato</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="projetos.html">Portfólio</a>
+            <a href="planos.html" class="btn-menu destaque">Planos</a>
+            <a href="index.html#serviços">Serviços</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="section portfolio-section">
+
+            <div class="portfolio-intro">
+                <h2>Meu Portfólio</h2>
+                <div class="linha-destaque"></div>
+
+                <p>
+                    Aqui estão alguns projetos desenvolvidos pela Arj CodeX, com foco em design moderno,
+                    organização, responsividade e soluções úteis para negócios reais.
+                </p>
+            </div>
+
+            <div class="portfolio-grid">
+
+                <div class="projeto-card">
+                    <span class="tag-novidade">Novidade</span>
+
+                    <div class="projeto-img">
+                        <img src="img/vitrine-1.png" alt="Projeto Vitrine Automotiva">
+                    </div>
+
+                    <h3>Vitrine Automotiva</h3>
+
+                    <p>
+                        Catálogo de veículos com painel administrativo, cadastro de carros,
+                        vendedores, fotos e informações completas.
+                    </p>
+
+                    <button onclick="abrirProjeto(0)">Ver mais</button>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-img projeto-placeholder">
+                        <span>Em breve</span>
+                    </div>
+
+                    <h3></h3>
+
+                    <p>
+                        Em breve.
+                    </p>
+
+                    <!-- <button onclick="abrirProjeto(1)">Ver mais</button> -->
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-img projeto-placeholder">
+                        <span>Em breve</span>
+                    </div>
+
+                    <h3></h3>
+
+                    <p>
+                        Em breve
+                    </p>
+
+                    <!-- <button onclick="abrirProjeto(2)">Ver mais</button> -->
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="portfolio-detalhe" id="detalheProjeto">
+
+    <button class="btn-voltar-portfolio" onclick="fecharProjeto()">
+        ← Voltar ao portfólio
+    </button>
+
+    <div class="detalhe-info">
+        <h2 id="tituloProjeto">Vitrine automotiva</h2>
+        <p id="descricaoProjeto">
+            Catálogo de veículos com painel administrativo, cadastro de carros, vendedores e fotos.
+        </p>
+    </div>
+
+    <div class="carousel-container">
+
+        <button class="seta-carousel" onclick="mudarFoto(-1)">
+            ←
+        </button>
+
+        <div class="carousel-projetos" id="carouselFotos">
+            <!-- As fotos entram aqui pelo JavaScript -->
+        </div>
+
+        <button class="seta-carousel" onclick="mudarFoto(1)">
+            →
+        </button>
+
+    </div>
+
+    <a 
+        href="https://wa.me/5522997648741?text=Olá,%20tenho%20interesse%20em%20um%20projeto%20parecido%20com%20esse%20da%20Arj%20CodeX."
+        target="_blank"
+        class="btn-contato btn-projeto">
+        Quero um projeto como este
+    </a>
+
+</section>
+
+    </main>
+
+    <button class="btn-topo" onclick="voltarTopo()">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

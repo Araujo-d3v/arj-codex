@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arj CodeX</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+<body>
+
+    <header class="header" id="topo">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-arj.png" alt="ARJ CodeX">
+            </a>
+        </div>
+
+        <div class="menu-mobile-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <nav class="menu" id="menu">
+            <a href="index.html#contato" class="btn-menu destaque">Contato</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="projetos.html">Portfólio</a>
+            <a href="planos.html" class="btn-menu destaque">Planos</a>
+            <a href="index.html#serviços">Serviços</a>        
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="overlay"></div>
+
+            <div class="hero-card">
+                <h1>Olá, me chamo Ryan</h1>
+                <p>
+                    Desenvolvedor da Arj CodeX, dev em formação, criando sites e sistemas web
+                    com foco em design moderno, organização e soluções úteis.
+                </p>
+            </div>
+
+            <a href="#sobre" class="btn-descer">↓</a>
+        </section>
+
+        <section class="section" id="sobre">
+            <div class="container-sobre">
+
+                <div class="sobre-texto animar">
+                    <h2>Sobre mim</h2>
+
+                    <div class="linha-destaque"></div>
+
+                    <p class="animar">
+                        Atuo no desenvolvimento de sistemas web e criação de sites personalizados, 
+                        com foco em funcionalidade, organização e experiência do usuário.
+                    </p>
+
+                    <p class="animar">
+                        Cada projeto é planejado de forma individual, buscando atender às necessidades 
+                        específicas de cada cliente, alinhando eficiência técnica com identidade visual 
+                        e objetivos do negócio.
+                    </p>
+
+                    <p class="animar">
+                        Meu compromisso é entregar soluções modernas, seguras e bem estruturadas, 
+                        sempre priorizando a qualidade do resultado final e a satisfação do cliente.
+                    </p>
+                </div>   
+
+            </div>
+        </section>
+
+        <section class="section" id="serviços">
+            <h2>Serviços</h2>
+            <div class="linha-destaque"></div>
+
+            <div class="cards-planos">
+                <div class="plano">
+                    <h3>Básico</h3>
+                    <p></p>
+                        <ul class="lista-sistemas">
+                            <li>Landing page simples e responsiva</li>
+                            <li>Convite para eventos</li>
+                        </ul>
+                </div>
+
+                <div class="plano">
+                    
+                    <h3>Sistemas Web</h3>
+                    <p></p>
+                        <ul class="lista-sistemas">
+                            <li>Área da saúde</li>
+                            <li>Restaurantes</li>
+                            <li>Lojas e comércios</li>
+                            <li>Controle de estoque</li>
+                            <li>Agendamentos</li>
+                        </ul>
+                        
+                </div>
+
+                <div class="plano">
+                    <h3>Projeto Personalizado</h3>
+                    <p></p>
+                        <ul class="lista-sistemas">
+                            <li>Ideia única do cliente</li>
+                            <li>Atualizações de funcionalidades</li>
+                            <p></p>
+                            <li>Tudo sob medida e necessidade do cliente</li>
+                        </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contato">
+            <h2>Contato</h2>
+            <div class="linha-destaque"></div>
+            <p>Entre em contato para conversar sobre seu projeto e fazer um orçamento.</p>
+
+            <a href="https://wa.me/5522997648741" class="btn-contato" target="_blank">
+                Falar no WhatsApp
+            </a>
+        </section>
+
+        <footer class="footer">
+            <p>
+                Site desenvolvido pela <span>ARJ CodeX</span>
+            </p>
+
+            <a href="https://instagram.com/ryan.d3v" target="_blank" class="instagram-btn">
+                @ryan.d3v
+            </a>
+        </footer>
+    </main>
+
+    <button class="btn-topo" onclick="voltarTopo()">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
